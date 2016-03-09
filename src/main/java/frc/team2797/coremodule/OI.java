@@ -85,28 +85,6 @@ public class OI {
 		lTrig2 = xb2.getRawAxis(2);
 		rTrig2 = xb2.getRawAxis(3);
 
-		// lb = xb1.getRawButton(5);
-		// rb = xb1.getRawButton(6);
-		//
-		// a = xb1.getRawButton(1);
-		// b = xb1.getRawButton(2);
-		// y = xb1.getRawButton(4);
-		// x = xb1.getRawButton(3);
-		//
-		// start = xb1.getRawButton(8);
-		// select = xb1.getRawButton(7);
-		//
-		// lb2 = xb2.getRawButton(5);
-		// rb2 = xb2.getRawButton(6);
-		//
-		// a2 = xb2.getRawButton(1);
-		// b2 = xb2.getRawButton(2);
-		// y2 = xb2.getRawButton(4);
-		// x2 = xb2.getRawButton(3);
-		//
-		// start2 = xb2.getRawButton(8);
-		// select2 = xb2.getRawButton(7);
-
 		// SmartDashboard Buttons
 		SmartDashboard.putData("AutoReachDefense", new AutoReachDefense());
 		SmartDashboard.putData("AutoCrossDefense", new AutoCrossDefense());
