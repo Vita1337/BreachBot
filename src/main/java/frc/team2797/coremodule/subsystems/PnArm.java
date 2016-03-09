@@ -2,6 +2,7 @@ package frc.team2797.coremodule.subsystems;
 
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.team2797.coremodule.RobotMap;
 
@@ -25,6 +26,27 @@ public class PnArm extends Subsystem {
 
 		Main.set(DoubleSolenoid.Value.kForward);
 
+	}
+
+	public void lower() {
+
+		Main.set(DoubleSolenoid.Value.kReverse);
+	}
+
+	public void presetKick() {
+
+		kicker.set(DoubleSolenoid.Value.kForward);
+		Timer.delay(1);
+		kicker.set(DoubleSolenoid.Value.kReverse);
+
+	}
+
+	public void kick() {
+		kicker.set(DoubleSolenoid.Value.kForward);
+	}
+
+	public void retractKicker() {
+		kicker.set(DoubleSolenoid.Value.kReverse);
 	}
 
 	public void initDefaultCommand() {
