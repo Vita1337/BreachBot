@@ -26,6 +26,8 @@ public class Drivetrain extends Subsystem {
 
 	public void tankDrive(double left, double right) {
 
+		robotDrive.tankDrive(left, right, true);
+
 	}
 
 	public void initDefaultCommand() {
