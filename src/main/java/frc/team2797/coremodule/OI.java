@@ -17,8 +17,8 @@ public class OI {
 	// Declarations
 
 	// Controllers
-	Joystick xb1;
-	Joystick xb2;
+	public Joystick xb1;
+	public Joystick xb2;
 
 	// Axis on xb1
 	public double leftY;
@@ -67,6 +67,9 @@ public class OI {
 	public OI() {
 
 		// Constructors
+		xb1 = new Joystick(0);
+		xb2 = new Joystick(1);
+
 		leftY = xb1.getRawAxis(1);
 		leftX = xb1.getRawAxis(0);
 
