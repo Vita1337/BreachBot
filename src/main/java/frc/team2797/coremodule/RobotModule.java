@@ -46,9 +46,9 @@ public class RobotModule extends IterativeModule {
 
 		autonomousCommand = new AutoReachDefense();
 
-		server = CameraServer.getInstance();
-		server.setQuality(50);
-		server.startAutomaticCapture("cam0");
+		// server = CameraServer.getInstance();
+		// server.setQuality(50);
+		// server.startAutomaticCapture("cam0");
 
 		logger = new Logger("CoreModule", Logger.ATTR_DEFAULT);
 		logger.info("Hello World!");
